@@ -2,7 +2,6 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './src/Home';
-import AddEmployee from './src/addEmployee';
 import ListEmployees from './src/ListEmployees';
 import {Provider} from 'react-redux';
 import {store, persistor} from './src/redux/store';
@@ -22,8 +21,6 @@ const App = (props: AppProps) => {
             <Stack.Screen name="SplashScreen" component={SplashScreen} />
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="Home" component={Home} />
-
-            <Stack.Screen name="AddEmployee" component={AddEmployee} />
             <Stack.Screen name="ListEmployees" component={ListEmployees} />
             <Stack.Screen name="AllEmployees" component={AllEmployees} />
           </Stack.Navigator>
